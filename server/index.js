@@ -15,7 +15,7 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors({ origin: "https://ecomerce-ashy-three.vercel.app/", credentials: true }));
+app.use(cors({ origin: "https://ecomerce-ashy-three.vercel.app", credentials: true }));
 app.use(express.json());
 app.use(cookieParser());
 

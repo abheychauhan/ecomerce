@@ -57,7 +57,7 @@ export const getProducts = async (req, res) => {
     const products = await Product.find(filter)
       .skip(skip)
       .limit(Number(limit))
-      .sort({ createdAt: -1 }); // nayi pehle
+      .sort({ createdAt: -1 });
 
     res.json({
       success: true,

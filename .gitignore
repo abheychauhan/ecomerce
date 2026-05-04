@@ -1,0 +1,43 @@
+# Dependency directories
+node_modules/
+
+# Environment variables (SABSE ZAROORI)
+.env
+.env.local
+.env.development
+.env.production
+
+# Multer / Local Image Uploads 
+# (Kyunki aap Cloudinary use kar rahe ho, toh local temporary images GitHub pe nahi jani chahiye)
+uploads/
+public/uploads/
+temp/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+
+# OS generated files (Mac / Windows)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Optional: Editor directories and files (VS Code)
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

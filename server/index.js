@@ -10,7 +10,6 @@ import cartRoutes from "./routes/cartRoutes.js";
 import reviewRoutes from "./routes/reviewRoutes.js";
 
 dotenv.config();
-console.log("Mongo URI:", process.env.MONGO_URI);
 
 
 const app = express();

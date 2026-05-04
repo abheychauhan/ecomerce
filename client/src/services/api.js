@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api',
+  baseURL: 'https://ecomerce-hi7e.onrender.com/api',
   withCredentials: true, // cookies ke liye
 });
 
@@ -25,7 +25,7 @@ api.interceptors.response.use(
       original._retry = true;
       try {
         const res = await axios.post(
-          'http://localhost:5000/api/auth/refresh',
+          'https://ecomerce-hi7e.onrender.com/api/auth/refresh',
           {},
           { withCredentials: true }
         );
